@@ -28,7 +28,7 @@
 </bean>
  -->
     <!-- 
-<bean id="personManager" class="org.appfuse.service.impl.GenericManagerImpl">    
+ <bean id="personManager" class="org.appfuse.service.impl.GenericManagerImpl">    
     <constructor-arg ref="personDao"/>
 </bean>
  -->

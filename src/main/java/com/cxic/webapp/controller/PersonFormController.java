@@ -1,9 +1,10 @@
 package com.cxic.webapp.controller;
 
 import org.apache.commons.lang.StringUtils;
-import org.appfuse.service.GenericManager;
+
 import com.cxic.model.Person;
- 
+import com.cxic.service.PersonManager;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -11,18 +12,19 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
- 
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import java.util.Locale;
  
 @Controller
 @RequestMapping("/personform*")
 public class PersonFormController extends BaseFormController {
-    private GenericManager<Person, Long> personManager = null;
+    private PersonManager personManager = null;
  
     @Autowired
-    public void setPersonManager(@Qualifier("personManager") GenericManager<Person, Long> personManager) {
+    public void setPersonManager(@Qualifier("personManager") PersonManager personManager) {
         this.personManager = personManager;
     }
  

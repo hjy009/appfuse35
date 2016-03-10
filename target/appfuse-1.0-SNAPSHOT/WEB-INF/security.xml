@@ -34,5 +34,6 @@
     <global-method-security>
         <protect-pointcut expression="execution(* *..service.UserManager.getUsers(..))" access="ROLE_ADMIN"/>
         <protect-pointcut expression="execution(* *..service.UserManager.removeUser(..))" access="ROLE_ADMIN"/>
+        <protect-pointcut expression="execution(* *..service.PersonManager.getPeople(..))" access="ROLE_ADMIN"/>
     </global-method-security>
 </beans:beans>

@@ -1,6 +1,6 @@
 package com.cxic.webapp.controller;
 
-import org.appfuse.service.GenericManager;
+import com.cxic.service.PersonManager;
 import com.cxic.model.Person;
  
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +13,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/persons*")
 public class PersonController {
-    private GenericManager<Person, Long> personManager;
+    private PersonManager personManager;
  
     @Autowired
-    public void setPersonManager(@Qualifier("personManager") GenericManager<Person, Long> personManager) {
+    public void setPersonManager(@Qualifier("personManager") PersonManager personManager) {
         this.personManager = personManager;
     }
  

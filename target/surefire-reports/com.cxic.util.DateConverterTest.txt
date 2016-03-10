@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.cxic.util.DateConverterTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.625 sec - in com.cxic.util.DateConverterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.962 sec - in com.cxic.util.DateConverterTest
